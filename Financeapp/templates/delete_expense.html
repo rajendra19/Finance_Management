@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+{% block content %}
+  <h1>Delete Expense</h1>
+ <i class="fa fa-trash-o" style="font-size:20px;color:red"></i>
+  <p>Are you sure you want to delete "{{ expense.user_name }}"?</p>
+  <form method="post">
+    {% csrf_token %}
+    <input type="submit" value="Delete">
+  </form>
+{% endblock %}
+
+</body>
+</html>

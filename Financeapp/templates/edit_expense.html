@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit_Expenses</title>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+{% block content %}
+    <i class='fas fa-pen' style='font-size:20px'></i>
+  <h1>Edit Expense</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save Changes">
+  </form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+.add-expense-btn {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.add-expense-btn:hover {
+    background-color: darkgreen;
+}
+
+
